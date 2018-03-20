@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.app {
+    position: relative;
+}
+
+.img1 {
+    position: relative;
+    z-index: 10;
+}
+
+.img2 {
+    position: relative;
+    z-index: 20;
+    top: -30px;
+}
+
+.ar {
+    position: relative;
+    z-index: 10;
+}
+
+
+.pil {
+    position: relative;
+    z-index: 20;
+    top: -100px;
+    left: 150px;
+    animation-name: pil;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes pil {
+
+    0% {
+        left: 100px;
+        top: -60px;
+        transform: scale(1);
+    }
+
+
+    100% {
+        left: 50px;
+        top: -210px;
+        transform: rotate(-50deg);
+        
+
+    }
+
+}
+
+.pil2 {
+    position: relative;
+    z-index: 10;
+    top: -100;
+    left: 30;
+    animation-name: pil2;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 750ms;
+}
+
+@keyframes pil2 {
+    0% {
+        left: 30px;
+        top: -60px;
+    }
+
+    100% {
+        left: -20px;
+        top: -210px;
+        transform: rotate(-50deg);
+    }
+}
+
+.pile {
+    position: relative;
+    z-index: 10;
+    top: -100;
+    left: 100;
+    animation-name: pile;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes pile {
+    0% {
+        left: 121px;
+        top: -82px;
+        opacity: .7
+    }
+
+    100% {
+        left: 121px;
+        top: -100px;
+        opacity: .1
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.topnav {
+    position: relative;
+    overflow: hidden;
+    background-color: #e9e9e9;
+    top: 170px;
+    z-index: 1;
+}
+
+
+.topnav .search-container {
+    float: right;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav .search-container {
+        float: none;
+
+    }
+
+    .topnav a,
+    .topnav input[type=text],
+    .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+
+    }
+}
